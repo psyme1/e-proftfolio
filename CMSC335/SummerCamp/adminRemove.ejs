@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin GFA</title>
+</head>
+<body>
+    <h1>Removing All Applicants</h1>
+    <form action="/processAdminRemove" method="POST" onsubmit= "return confirmSubmission()">
+        <button type="submit">Remove All Applications</button>
+    </form>
+    <hr>
+    <a href="/">HOME</a>
+    <script>
+        function confirmSubmission() {
+            return confirm("Are you sure you want to remove all applicaitons?");
+        }
+    </script>
+</body>
+</html>

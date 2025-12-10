@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 80%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Application</h1>
+
+    <form action="/apply" method="POST" onsubmit="return confirmSubmission()">
+            <div class="container">
+                <label>Name: </label><input type="text" name="name">
+                <label>Email Address: </label><input type="email" name="email"><br><br>
+                <label>GPA: </label><input type="text" name="gpa"><br><br>
+                <label>Background Infromation:</label><br><textarea name="background"></textarea><br>
+            </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit Application</button>
+        </form>
+    <hr>
+
+    <script>
+        function confirmSubmission() {
+            return confirm("Are you sure you want to submit your application?\nYou will not be able to change your information once submitted.");
+        }
+    </script>
+
+    <a href="/">HOME</a>
+</body>
+</html>
