@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photo Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="largeBorder">
+      <h2 id="MainHead"><u>Photo Viewer</u></h2>
+      <div class="doubleBorder">
+        <img id="photo" src="InitialImage.jpg" alt="initialPhoto" />
+      </div>
+      <div class="ABox">
+        <fieldset>
+          <legend>Status</legend>
+          <p>Photo Being Displayed: <input type="text" value="" readonly /></p>
+          <p class="redText">Photo Viewer System</p>
+        </fieldset>
+        <fieldset>
+          <legend>Local Images (Local Folder)</legend>
+          <p>
+            Photos' Folder: <input type="text" /> Common Name:
+            <input type="text" />
+          </p>
+          <p>
+            Start Photo Number: <input type="number" /> End Photo Number:
+            <input type="number" />
+          </p>
+          <button>Load Photos</button>
+        </fieldset>
+        <fieldset>
+          <legend>Loading Images (JSON File)</legend>
+          <div id="LargeText">
+            <p>URL: <input type="text" /> <button>Load JSON</button></p>
+          </div>
+        </fieldset>
+        <fieldset id="IterateSet">
+          <legend>Iterating</legend>
+          <button>Previous Photo</button>
+          <button>Next Photo</button>
+          <button>First Photo</button>
+          <button>Last Photo</button>
+        </fieldset>
+        <fieldset id="SlideShowSet">
+          <legend>SlideShows</legend>
+          <button>SlideShow</button>
+          <button>RandomSlideShow</button>
+          <button>StopSlideShow</button>
+        </fieldset>
+        <div id="marginBelow">
+          <button>Reset Form Values</button>
+        </div>
+      </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>

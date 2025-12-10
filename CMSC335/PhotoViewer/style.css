@@ -1,0 +1,70 @@
+html {
+	font-size: 14px;
+}
+
+.largeBorder {
+    border: 0.714rem ridge red;
+    background-color: white;
+    width: 99%;
+	height: 100%;
+}
+
+.redText {
+    color: red;
+}
+
+#MainHead {
+    color: darkred;
+    margin-top: 1rem;
+    margin-left: 0.714rem;
+}
+
+.doubleBorder {
+    border: 0.536rem double black;
+    background-color: white;
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+}
+
+.doubleBorder img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.ABox {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+fieldset {
+    border: 0.15rem solid gray;
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+input:read-only {
+    background-color: lightgray;
+    width: 75%;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+#marginBelow {
+    margin-bottom: 1rem;
+}
+
+#LargeText input {
+    width: 70%;
+}
