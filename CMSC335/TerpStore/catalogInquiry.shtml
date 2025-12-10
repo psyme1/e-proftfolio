@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Catolog Inquiry</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="border">
+      <div class="inside">
+        <h2 class="MainHead"><u>Catolog Inquiry</u></h2>
+        <form
+          action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php"
+          method="get"
+        >
+          <div class="formGroupRed">
+            <label for="item-choice">Item Category:</label>
+            <select id="item-choice" name="item-choice" required>
+              <option value="" disabled selected>Select</option>
+              <option value="clothes">clothes</option>
+              <option value="books">books</option>
+              <option value="music">music</option>
+              <option value="food">food</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+          <div class="formGroupRed">
+            <label for="maximumCost">Maximum Cost ($)</label>
+            <input
+              type="number"
+              id="maximumCost"
+              name="maximumCost"
+              min="1"
+              max="1000"
+            />
+          </div>
+          <div class="formGroup">
+            <label
+              ><input type="checkbox" name="availableOnCampus" />Available on
+              Campus</label
+            >
+          </div>
+          <div id="specialFormGroup">
+            <label
+              ><input type="checkbox" name="availableOnline" checked />Available
+              Online</label
+            >
+          </div>
+          <label for="info">Additional Information</label>
+          <div class="formGroup">
+            <textarea id="info" name="info"></textarea>
+          </div>
+          <div class="formGroupTwo">
+            <label for="email">Contact Email Address:</label>
+            <div class="emailBar">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@terpmail.umd.edu"
+              />
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="submit">Submit Inquiry</button>
+            <button type="reset">Clear</button>
+          </div>
+        </form>
+        <div class="footerBorder">
+          <div class="secondFootBorder">
+            <div class="imported">
+              <!--#include virtual="footer.shtml" -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Terp Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="border">
+      <div class="inside">
+        <h2 class="MainHead"><u>Terp Store</u></h2>
+        <div id="CenterBorder">
+          <div id="CenterBox">
+            <a href="catalogInquiry.shtml"><u>Catalog Inquiry</u></a>
+            <a href="placingOrder.shtml"><u>Placing Order</u></a>
+          </div>
+        </div>
+        <div class="footerBorder">
+          <div class="secondFootBorder">
+            <div class="imported">
+              <!--#include virtual="footer.shtml" -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

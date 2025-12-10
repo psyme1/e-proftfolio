@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Catolog Inquiry</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="border">
+      <div class="inside">
+        <h2 class="MainHead"><u>Placing Order</u></h2>
+        <form action="processing/placingOrder.php" method="post">
+          <div class="formGroupRed">
+            <label for="serialNumber">Item Serial #</label>
+            <input
+              type="text"
+              id="serialNumber"
+              name="serialNumber"
+              placeholder="umd-item-0000"
+            />
+          </div>
+          <div id="ccFormGroup">
+            <label for="cc1">Credit Card #</label>
+            <input type="text" id="cc1" name="cc1" maxlength="4" required />
+            -
+            <input type="text" id="cc2" name="cc2" maxlength="4" required />
+            -
+            <input type="text" id="cc3" name="cc3" maxlength="4" required />
+            -
+            <input type="text" id="cc4" name="cc4" maxlength="4" required />
+          </div>
+          <div class="formGroupRed">
+            <label for="shipping">Shipping Address</label>
+            <input type="text" id="shipping" name="shipping" maxlength="80" />
+          </div>
+          <div class="formGroupTwo">
+            <label for="email">Contact Email Address:</label>
+            <div class="emailBar">
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@terpmail.umd.edu"
+                />
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="submit">Submit Order</button>
+            <button type="reset">Clear</button>
+          </div>
+        </form>
+        <div class="footerBorder">
+          <div class="secondFootBorder">
+            <div class="imported">
+              <!--#include virtual="footer.shtml" -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
