@@ -1,0 +1,6 @@
+# state, counties, count
+California,Los Angeles|San Diego|Orange,
+SmallState,,3
+OnlyCounty,,  # invalid but shows comment usage
+# You can also leave state blank and provide county: (integrator must handle uniqueness)
+,Washington County,
